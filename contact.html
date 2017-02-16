@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Portfolio</title>
+	<title>Contact</title>
 </head>
 
 <body>
@@ -19,32 +19,19 @@
 		</nav>
 		
 		<!-- The following div contains two sections which are article and aside -->
-		<div class = "Portfolio"> 
-			
-			<article id = "article">
-				<h1>Portfolio</h1>
+		<div class = "contact"> 
+			<h1>Contact</h1>
 
-				<a href="#">
-					<img src="assets/images/Hangman.jpg" alt = "Hangman" width="178px" height="130px">
-				</a>
-
-				<a href="#">
-					<img src ="assets/images/RPG Game.jpg" alt = "RPG Game" width = "178px" height="130px">
-				</a>
-
-				<a href="#">
-					<img src ="assets/images/Trivia Game.jpg" alt = "Trivia Game" width = "178px" height="130px">
-				</a>
-
-				<a href="#">
-					<img src ="assets/images/Rutgers.jpg" alt = "Rutgers Info Widget" width = "178px" height="130px"> 
-				</a>
-
-				<a href="#">
-					<img src ="assets/images/Rock Paper Scissors.jpg" alt = "Rock Paper Scissors" width = "178px" height="130px"> 
-				</a>
-
-			</article>
+			<!-- The following code to creat a form for users to sent their info to Amer -->
+			<form action = "/action_page.php">
+				Name    <br>
+				<input type="text" name="name" value="John Smith"> <br>
+				Email   <br>
+				<input type="text" name="email" value="example@gmail.com"> <br>
+				Message <br>
+				<input type="text" name="msg"> <br><br>
+				<input type="submit" name="submit" value="Submit">
+			</form>
 
 			<aside id = "aside">
 				<h1> Connect with Me </h1>
