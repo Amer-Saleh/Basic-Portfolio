@@ -1,4 +1,6 @@
 
+html { height: 100%; }
+
 *{
 	box-sizing: border-box;
 	font-family: Arial, 'Helvetica Neue', Helvtica, sans-serif;
@@ -8,6 +10,9 @@
 body{
 	background-image: url("../images/background.png");	
 	color: #777777;
+	min-height:100%; 
+    position:relative; 
+    padding-bottom:[footer-height]
 }
 
 
@@ -119,7 +124,7 @@ p{
 
 #footer{
 	clear:both;
-	position: relative;
+	/*position: relative;*/
 	background-color: #666666;
 	padding: 20px;
 	margin-bottom: 20px;
@@ -128,6 +133,9 @@ p{
 	border-style: solid;
 	border-top-color: #4aaaa5;
 	border-top-width: 7px;
+	position: absolute;
+    left: 0 ; right: 0; bottom: 0; 
+    height:[footer-height]
 }
 
 /*The style of Copy right header*/
@@ -140,42 +148,45 @@ a:link{
 	text-decoration: none;
 }
 
-/*Styles are related to Portfolio only*/
+/* the following styles are related to Portfolio page only*/
 
-/*.container1, .container2, .container3, .container4, .container5{*/
 .container1{ 
+	float: left;
+	padding-top: 25px;
+	padding-bottom: 47px;
 	position: relative;
-	left: 20px;
-	top: 15px;
 }
 
 .container2{ 
+	float: left;
+	padding-top: 25px;
+	padding-left: 33px;
+	padding-bottom: 47px;
 	position: relative;
-	left: 276px;
-	top: -203px;
 }
 
 .container3{ 
+	float: left;
+	padding-bottom: 47px;
 	position: relative;
-	left: 20px;
-	top: -203px;
 }
 
 .container4{ 
+	float: left;
+	padding-left: 33px;
+	padding-bottom: 47px;
 	position: relative;
-	left: 276px;
-	top: -421px;
 }
 
 .container5{ 
+	float: left;
+	padding-bottom: 47px;
 	position: relative;
-	left: 20px;
-	top: -421px;
 }
 
 
  .text{
-  	position: relative;
+  	position: absolute;
     bottom: 55px;
     background-color: #4aaaa5;
     width: 226px;
@@ -184,6 +195,8 @@ a:link{
     text-align: center;
     color:  #ffffff;
 }
+
+/* the following styles are related to Contact page only*/
 
 input{
 	width: 511px;
@@ -197,6 +210,10 @@ input{
 	border-color: #dddddd;
 }
 
+.portfolio-img{
+	width: 226px;
+	height: 168px; 
+}
 #msg{
 	height: 174px;
 }
